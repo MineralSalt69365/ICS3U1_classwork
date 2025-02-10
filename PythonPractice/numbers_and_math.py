@@ -3,9 +3,9 @@ print("There are 11 girls, so that means..")
 print(f"there are " + {33 - 11} + " boys.")
 #substraction
 print()
-print(f"That means {(round((11/33)*100))} % are girls...")
+print(f"That means {round((11/33)*100)} % are girls...")
 #division
-print(f"and {(round((22 / 33)*100))} % are boys.")
+print(f"and {round((22 / 33)*100)} % are boys.")
 # substraction(first) & division
 print()
 print("If we made groups of six...")
