@@ -16,9 +16,11 @@ clock = pygame.time.Clock()
 white = (255,255, 255)
 yellow = (255,255,0)
 light_yellow = (255,255,204)
-green = (124,252,0)
+green = (50,205,50)
 dark_green = (34,139,34)
 red = (255,0,0)
+light_blue = (130, 205, 223)
+black = (0,0,0)
 
 sun_radius = 60
 cloud_x = 210
@@ -58,16 +60,22 @@ while running:
     pygame.draw.circle(screen, white, (cloud_x, cloud_y), radius)
     pygame.draw.circle(screen, white, (cloud_x-33, cloud_y+22), radius)
     pygame.draw.circle(screen, white, (cloud_x+24, cloud_y+26), radius)
-    #mountain
+    #bush
     pygame.draw.ellipse(screen, dark_green, (-50, 180, 330, 300))
     pygame.draw.ellipse(screen, dark_green, (250, 200, 310, 400))
     pygame.draw.ellipse(screen, dark_green, (520, 180, 310, 400))
     #grass
     pygame.draw.rect(screen, green, (0, 350 ,WIDTH, 350))
+    #rain
+    # pygame.draw.line(screen, white, (50, 100), (80,130))
+    pygame.draw.ellipse(screen, black, (200, 340, 10, 10))
+    pygame.draw.ellipse(screen, black, (209, 342, 8, 8))
+    pygame.draw.ellipse(screen, black, (216, 343, 12, 10))
+
     # Must be the last two lines
     # of the game loop
     pygame.display.flip()
-    clock.tick(30)
+    clock.tick(30)       
     #---------------------------
 
 
